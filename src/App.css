@@ -1,38 +1,120 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
 .App {
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+  width: 500px;
+  border: 1px solid blue;
+  padding: 8px;
 }
 
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
-  display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  font-size: 12px;
   color: white;
+  padding: 8px;
 }
 
-.App-link {
-  color: #61dafb;
+.input-form{
+  width: 100%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.submit-form{
+  width: 100%;
+}
+
+.submit-form button {
+  width: 50%;
+  padding: 8px 16px;
+  margin-top: 8px;
+  background-color: #61dafb;
+  color: darkslategrey;
+  font-weight: 600;
+}
+
+.submit-form button:hover {
+  background-color: cyan;
+  color: black;
+  cursor: pointer;
+}
+
+.form-item{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-item input {
+  width: 100%;
+  padding: 8px;
+  margin-top: 4px;
+}
+
+.transaction-list{
+  margin-top: 16px;
+  margin-bottom: 16px;
+  padding: 8px;
+}
+
+.transaction-heading {
+  color: #fff;
+  padding: 8px;
+  border-bottom: 1px solid #ccc;
+}
+
+.transactions {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.income-list, .expense-list{
+  width: 100%;
+  padding: 16px;
+}
+
+.income-heading, .expense-heading {
+  margin-bottom: 16px;
+}
+
+.income-items, .expense-items {
+  width: 100%;
+}
+
+.card-item {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.item-left {
+  width: 50%;
+  padding: 8px;
+  text-align: left;
+}
+
+.item-right {
+  width: 50%;
+  padding: 8px;
 }
